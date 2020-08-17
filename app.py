@@ -168,9 +168,9 @@ def predict():
         # })
         # response.headers.add('Access-Control-Allow-Origin','*')
         if int(output)>0:
-            return render_template('single.html', prediction_text="Flight's probable departure would be {} minutes after the schedule".format(round(output.item(),2)))
+            return render_template('single.html', prediction_text="Flight's probable departure will be {} minutes after the schedule".format(round(output.item(),2)))
         elif int(output)<0:
-            return render_template('single.html', prediction_text="Flight's probable departure would be {} minutes before the schedule.".format(round(-output.item(),2)))
+            return render_template('single.html', prediction_text="Flight's probable departure will be {} minutes before the schedule.".format(round(-output.item(),2)))
         elif int(output)==0:
             return render_template('single.html', prediction_text="Flight will be departing on time.")
     # return response
