@@ -10,10 +10,13 @@
 
 
 <form action="/transform" method="post" enctype="multipart/form-data" >
-<span>Choose File(in .csv format)</span><br>
+<span>Choose File</span><br>
 <input type="file" name="file" class="btn btn-dark"></input><br>
 <input type = "submit" value="Upload and Predict Delays" class="btn btn-light" type="button"></input><br>
             <!-- <div id="uipredict" class="result"><h2>{{prediction_text}}</h2></div> -->
-<h4>Month</h4>
+        <h4>Variables Required</h4>
+        <p>MONTH, DAY, DAY OF WEEK, </p>
+        <p>AIRLINES ,ORIGIN AIRPORT, DESTINATION AIRPORT, </p>
+        <p>SCHEDULED TIME, SCHEDULED DEPARTURE, ARRIVAL DELAY</p>
 </form>
 {% endblock %}
