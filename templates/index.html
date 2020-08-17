@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Delay Predictor: HOME PAGE</title>
+    <script src="{{url_for('static', filename='css/index.js')}}"></script>
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='css/indexbody.css')}}">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='css/buttons.css')}}">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='css/dropin.css')}}">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+
+    <div class="icon-bar">
+        <a class="active" href="/"><i class="fa fa-home"></i>  Home  Page  </a>
+        <a href="/single"><i class='fas fa-plane'></i> Single Output Predictions</a> 
+        <a href="/multi"><i class='fas fa-map-marked'></i> Multiple Output Predictions</a> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>Home Page</h1>
+    <br>
+    <h3>Hi! lets predict your Delay...</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+    <div class="container">
+        <div class="vertical-center">   
+                <a id="rcorners1" class="btn btn-lg btn-pimary btn-bloack" href="/single" role="button">Lets Predict! &raquo;<i class='fas fa-plane-departure'></i></a>
+        </div>
+    </div>        
+</body>
+</html>
+

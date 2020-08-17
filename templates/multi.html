@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Multiple Predictions</title>
+{% endblock %}
+
+{% block body %}
+
+<h1>Multiple Output Predictions</h1>
+
+
+<form action="/transform" method="post" enctype="multipart/form-data" >
+<span>Choose File(in .csv format)</span><br>
+<input type="file" name="file" class="btn btn-dark"></input><br>
+<input type = "submit" value="Upload and Predict Delays" class="btn btn-light" type="button"></input><br>
+            <!-- <div id="uipredict" class="result"><h2>{{prediction_text}}</h2></div> -->
+<h4>Month</h4>
+</form>
+{% endblock %}

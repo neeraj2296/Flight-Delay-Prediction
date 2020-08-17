@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Flight Delay Predictor: Single Predictions</title>
+{% endblock %}
+
+{% block body %}
+<h1>Single    Output    Predictions</h1>
+
+<form action="{{ url_for('predict')}}" method="post">
+
+     <h5 class="card-title">Hi lets predict your Flight's Delay</h5>
+            <!-- Airline -->
+            <label type='AIRLINES'>airlines</label>
+            <select class="AIRLINE" name="AIRLINE" id="uiAIRLINE" required="required">
+                   <option value="" disabled="disabled" selected="selected">Choose a airline</option>
+            </select>
+            <br>
+            <label type='Origin Airport'>Origin Airport</label>
+            <select name="ORIGIN_AIRPORT" id="uiORIGIN" required="required">
+                    <option value="" disabled="disabled" selected="selected">From</option>
+            </select>
+            <br>
+            <label type='Destination Airport'>Destination Airport</label>
+            <select name="DESTINATION_AIRPORT"  id="uiDESTIN" required="required">
+                    <option value="" disabled="disabled" selected="selected">To</option>
+            </select>
+            <br>
+            <!--<label for="DAY_OF_WEEKY">DAY_OF_WEEKY</label>
+            <input type="text" name="DAY_OF_WEEK" placeholder="DAY_OF_WEEK" required="required" /><br>-->
+            <label for="DATE">Date</label>
+            <input class="DATE" type="date" name= "DATE" id="uiDATE" class="floatLabel"   placeholder="date" required="required" value="" /><br>
+            <label for="DEPARTURE">SCHEDULED Departure</label>
+            <input class="DEPARTURE" type="time" name="SCHEDULED_DEPARTURE" id="uiDEPARTURE"  class="floatLabel"  placeholder="DEPARTURE" required="required" value=""/>
+            <br><label for="TIME">SCHEDULED TIME</label>
+            <input class="TIME" type="time" name= "SCHEDULED_TIME" id="uiTIME" class="floatLabel"  placeholder="SCHEDULED_TIME" required="required" value="" /><br>
+            <label for="ARRIVAL_DELAY">ARRIVAL Delay</label>
+            <input class="ARRIVAL_DELAY" type="number" name="ARRIVAL_DELAY" id="uiARRIVAL_DELAY" class="floatLabel"  required="required" value=""/>
+            <br>
+            <button type = "submit" class="btn btn-primary btn-lg" type="button">Predict Delay</button><br>
+            <div id="uipredict" class="result"><h2>{{prediction_text}}</h2></div>
+
+
+    
+</form>
+
+
+{% endblock %}
+</main> 

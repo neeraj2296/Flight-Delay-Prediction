@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+
+html {
+  scroll-behavior: smooth; width: 100%; height:100%; overflow:auto;
+}
+
+body { 
+	font-family: 'Sniglet', cursive;
+	background: #f4f6f7;
+	color: black;
+	font-size: 18px;
+	font-weight:300;
+	font-style:normal;
+	text-align: center;
+	letter-spacing:1.2px;
+    line-height : 2.5em;
+    height : 100%;
+    background-image: url("../imcons/delayed-flight04.jpeg");
+    background-position : top;
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+
+body {margin:0;}
+
+.icon-bar {
+    font-family: 'Sniglet', cursive;
+    width: 100% ;
+    padding: 12px 5;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 12px 5;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+
+h1 {
+    font-family: 'Fredoka One', cursive;;
+    color:  rgba(247, 148, 1, 0.897);
+    text-align: center;
+    text-shadow: black;
+}
+
+p  {
+    font-family: 'Fredoka One', cursive;;
+    color: black;
+    text-align: en"" d;
+    text-shadow: black;;
+}
+
+label { display: inline-block; width: 210px; text-align: right; }
+
+.submit{
+  background: #80dfdf;
+  width: 76%;
+  border: 0;
+  margin: 25px 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+	height: 35px;
+	text-align: center;
+	border-radius: 5px;
+}
+.result{
+		background: rgb(182, 204, 238);
+		width: 100%;
+		border: black;
+		margin: 25px 10px;
+		box-sizing: border-box;
+    font-size: 40px;
+    color: rgb(31, 29, 168);
+    font-weight: 700;
+    height: 35px;
+    nav-index: auto;
+    text-align: center;
+    animation:blinkingText 1.2s infinite;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+@keyframes blinkingText{
+    0%{     color: rgb(55, 29, 168);    }
+    49%{    color: transparent; }
+}
+
+
+
