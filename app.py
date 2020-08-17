@@ -100,9 +100,9 @@ def batch_view():
         result_df['Result'] = input_predict
         result_df['Result_Description'] = result_df['Result']
 
-        result_df.to_csv('Prediction.csv')
+        result_df.to_csv('prediction.csv')
 
-        return redirect('/downloadfile/' + 'Prediction.csv')
+        return redirect('/downloadfile/' + 'prediction.csv')
 
     return render_template('multi.html')
 
