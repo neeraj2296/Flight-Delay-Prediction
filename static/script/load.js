@@ -2,7 +2,7 @@ function onPageLoad() {
 
     console.log( "document loaded" );
     // var url = "http://127.0.0.1:5000/get_AIRLINE";
-    var url = " https://us-flight-delay-predictor.herokuapp.com/airline";    
+    var url = " https://us-flight-delay-predicter.herokuapp.com/airline";    
     $.get(url,function(data, status) {
         console.log("got response for get_AIRLINE request");
         if(data) {
@@ -18,7 +18,7 @@ function onPageLoad() {
     });
     console.log( "document loaded" );
     // var url = ""; 
-    var url = " https://us-flight-delay-predictor.herokuapp.com/origin";
+    var url = " https://us-flight-delay-predicter.herokuapp.com/origin";
     $.get(url,function(data, status) {
         console.log("got response for get_Destination_airport request");
         if(data) {
@@ -33,7 +33,7 @@ function onPageLoad() {
     });
     console.log( "document loaded" );
     // var url = ""; 
-    var url = " https://us-flight-delay-predictor.herokuapp.com/destination";
+    var url = " https://us-flight-delay-predicter.herokuapp.com/destination";
     $.get(url,function(data, status) {
         console.log("got response for get_Destination_airport request");
         if(data) {
